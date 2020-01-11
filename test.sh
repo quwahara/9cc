@@ -17,9 +17,11 @@ try () {
   fi
 }
 
+#try 3 "1+ 2 3" ; exit 0
 try 0 0
 try 42 42
 try 21 "5+20-4"
 try 22 "6 + 20 - 4"
+try 15 "5 * (1 + 2)"
 
 echo OK
